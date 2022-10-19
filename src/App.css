@@ -1,38 +1,202 @@
-.App {
-  text-align: center;
+:root {
+  --cor-fonte: #fbfbfb;
+  --cor-primaria: #23232e;
+  --cor-secundaria: #d91a62;
+  --cor-terciaria: #f0a029;
+  --cor-quartenaria: #9ad91a;
+  --cor-quinaria: #1ef8d7;
+  --cor-sombra: #48485e;
+  --unidade: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: var(--cor-primaria);
+  color: var(--cor-fonte);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Remover list-style dos ul, ol  */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* NavBar */
+
+.navbar {
+  height: 6vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cor-primaria);
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+.navbar ul li:last-child {
+  margin-right: 4rem;
+}
+
+.navbar h1 {
+  margin-left: 4rem;
+  font-size: x-large;
+}
+
+/* Animação ComexClub */
+
+.main-logo {
+  overflow: hidden;
+  width: 100%;
+}
+
+.container {
+  width: max-content;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: var(--unidade);
+  background-color: var(--cor-primaria);
+}
+
+.linha {
+  height: var(--unidade);
+  display: flex;
+  gap: var(--unidade);
+  padding: 5px;
+}
+
+.celula {
+  height: 100%;
+  width: calc(var(--tamanho, 1) * var(--unidade));
+  background-color: var(--cor-sombra);
+  border-radius: 500px;
+}
+
+.transparencia1 {
+  opacity: 0.4;
+}
+
+.transparencia {
+  opacity: 0.2;
+}
+
+/* Tamanho dos Blocos da Animação */
+.size-3 {
+  /* 2 bolas */
+  --tamanho: 3;
+}
+
+.size-5 {
+  /* 3 bolas */
+  --tamanho: 5;
+}
+
+.size-7 {
+  /* 4 bolas */
+  --tamanho: 7;
+}
+.size-9 {
+  /* 5 bolas */
+  --tamanho: 9;
+}
+.size-11 {
+  /* 6 bolas */
+  --tamanho: 11;
+}
+.size-13 {
+  /* 7 bolas */
+  --tamanho: 13;
+}
+.size-15 {
+  /* 8 bolas */
+  --tamanho: 15;
+}
+.size-17 {
+  /* 9 bolas */
+  --tamanho: 17;
+}
+.size-19 {
+  /* 10 bolas */
+  --tamanho: 19;
+}
+
+/* Componente Comex*/
+.comex {
+  padding-bottom: 2rem;
+}
+
+.comexclub {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  font-size: 42px;
+}
+
+.empresa {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: xx-large;
 }
 
-.App-link {
-  color: #61dafb;
+section p span {
+  color: var(--cor-quartenaria);
+  padding-left: 0.4em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 30vh 1rem 30vh;
+  border: 8px solid var(--cor-quartenaria);
+  padding: 1rem 0rem 1rem 0rem;
+  border-radius: 5rem;
+}
+
+.info div:first-child {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: justify;
+}
+
+/* Classes utilitárias */
+
+.fonte-branca {
+  color: var(--cor-fonte);
+}
+
+.cor-primaria {
+  background-color: var(--cor-primaria);
+}
+
+.cor-secundaria {
+  background-color: var(--cor-secundaria);
+}
+
+.cor-terciaria {
+  background-color: var(--cor-terciaria);
+}
+
+.cor-quartenaria {
+  background-color: var(--cor-quartenaria);
+}
+
+.cor-quinaria {
+  background-color: var(--cor-quinaria);
+}
+
+.cor-sombra {
+  background-color: var(--cor-sombra);
+}
+
+.bold {
+  font-weight: bold;
 }
