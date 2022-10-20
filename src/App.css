@@ -7,6 +7,7 @@
   --cor-quinaria: #1ef8d7;
   --cor-sombra: #48485e;
   --unidade: 15px;
+  --letra-grande: x-large;
 }
 
 body {
@@ -130,7 +131,7 @@ html:focus-within {
 
 /* Componente Comex*/
 .comex {
-  padding-bottom: 2rem;
+  margin: 0;
 }
 
 .comexclub {
@@ -146,7 +147,7 @@ html:focus-within {
   font-size: xx-large;
 }
 
-section p span {
+.mundo {
   color: var(--cor-quartenaria);
   padding-left: 0.4em;
 }
@@ -164,6 +165,60 @@ section p span {
   display: flex;
   flex-flow: column;
   justify-content: center;
+  text-align: justify;
+}
+
+.ondas {
+  aspect-ratio: 900/150;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(./Components/Imagem/waves3.svg);
+}
+
+/* Section Importação */
+
+.importacao {
+  background-color: var(--cor-sombra);
+  margin-bottom: 0;
+}
+
+.titulo-importacao {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.tipo-importacao {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem 1rem 2rem 1rem;
+  border: 8px solid var(--cor-quinaria);
+  margin: 1rem 30vh 1rem 30vh;
+  border-radius: 5rem;
+  text-align: justify;
+}
+
+section h3 span {
+  padding-left: 5px;
+}
+
+.onda {
+  aspect-ratio: 900/150;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(./Components/Imagem/onda.svg);
+}
+
+/* Section Invoice */
+
+.Invoice {
+  margin: 1rem 30vh 1rem 30vh;
+  padding: 2rem 1rem 2rem 1rem;
   text-align: justify;
 }
 
@@ -199,4 +254,33 @@ section p span {
 
 .bold {
   font-weight: bold;
+}
+
+.padding {
+  padding: 1rem;
+}
+
+.padding2 {
+  padding: 0.3rem;
+}
+
+.quinaria {
+  color: var(--cor-quinaria);
+}
+
+.terciaria {
+  color: var(--cor-terciaria);
+}
+
+.sublinhado {
+  text-decoration: underline;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.letra-tamanho {
+  font-size: var(--letra-grande);
 }

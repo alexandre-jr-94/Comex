@@ -1,0 +1,139 @@
+.table {
+  min-width: fit-content;
+  position: relative;
+  min-height: 335mm;
+}
+
+.paper {
+  background-color: rgb(245, 245, 245);
+  margin-top: 4rem;
+  width: 210mm;
+  height: 297mm;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  box-shadow: 0px 0px 20px #f0a029;
+  z-index: 0;
+  color: black;
+  margin-bottom: 3rem;
+}
+
+nav {
+  display: flex;
+  min-width: 100%;
+}
+
+.expo {
+  font-size: large;
+}
+
+.exportador {
+  padding-left: 1rem;
+}
+
+.InvoiceNum {
+  margin-left: auto;
+  padding-right: 1rem;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  text-decoration: underline;
+}
+
+p {
+  padding-left: 1rem;
+}
+
+h3 {
+  padding-left: 1rem;
+  font-size: large;
+  text-transform: uppercase;
+}
+
+table {
+  border-collapse: collapse;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+table tr:last-child {
+  min-height: 9rem;
+}
+
+.table th {
+  padding: 4px 15mm;
+}
+
+table td {
+  border: 1px solid #e3e3e3;
+  padding: 4px 8px;
+  padding-bottom: 3rem;
+}
+
+.total {
+  display: flex;
+  padding-right: 1rem;
+}
+
+.info2 {
+  border-top: 1px solid #e3e3e3;
+}
+
+.Pagamento {
+  border-top: 1px solid #e3e3e3;
+  font-size: small;
+}
+
+.ass {
+  border-top: 2px solid black;
+  margin-top: 10mm;
+  max-width: 50mm;
+  margin-left: 2rem;
+}
+
+.Nome {
+  position: absolute;
+  left: 25mm;
+  top: 265mm;
+  font-style: italic;
+  color: #080073;
+  font-family: "Brush Script", "Bradley Hand ITC";
+  font-size: x-large;
+  rotate: -15deg;
+}
+
+.carimbo {
+  color: #080073;
+  box-shadow: 0 0 0 3px #080073, 0 0 0 2px #080073 inset;
+  border: 2px solid transparent;
+  position: absolute;
+  top: 248mm;
+  left: 40mm;
+  padding: 1rem;
+  min-height: 15mm;
+  font-family: "Bahnschrift SemiLight";
+  opacity: 0.4;
+  text-transform: uppercase;
+  text-align: center;
+  rotate: -5deg;
+  font-size: smaller;
+  max-width: 50mm;
+}
+
+.CarimboText {
+  font-size: x-small;
+}
+
+.Negrito {
+  font-weight: bold;
+}
+
+.autor {
+  color: rgb(153, 158, 160);
+  font-size: small;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}

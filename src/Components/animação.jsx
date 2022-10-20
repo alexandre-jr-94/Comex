@@ -1,6 +1,7 @@
 function Animacao() {
   return (
     <main className="main-logo">
+      {/* Navio */}
       <section className="container">
         <div className="linha">
           <div className="celula"></div>

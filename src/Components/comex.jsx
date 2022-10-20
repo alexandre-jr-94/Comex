@@ -3,7 +3,7 @@ function Comex() {
     <section className="comex">
       <h2 className="comexclub">ComexClub</h2>
       <p className="empresa">
-        Você conectado com o <span className="bold">mundo</span>!
+        Você conectado com o <span className="bold mundo">mundo</span>!
       </p>
       <div className="info">
         <div>
@@ -21,6 +21,7 @@ function Comex() {
           </ul>
         </div>
         <div>
+          {/* SVG planeta terra */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="400"
@@ -34,6 +35,8 @@ function Comex() {
           </svg>
         </div>
       </div>
+      {/* SVG de ondas */}
+      <div className="ondas"></div>
     </section>
   );
 }
