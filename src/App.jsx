@@ -5,6 +5,7 @@ import Importacao from "./Components/importação";
 import Navbar from "./Components/navbar";
 import Invoice from "./Components/invoice";
 import InvoiceEx from "./Components/InvoiceEx.jsx";
+import Packinglist from "./Components/packinglist";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Importacao></Importacao>
       <Invoice></Invoice>
       <InvoiceEx></InvoiceEx>
+      <Packinglist></Packinglist>
     </div>
   );
 }

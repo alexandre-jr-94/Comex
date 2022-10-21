@@ -217,7 +217,28 @@ section h3 span {
 /* Section Invoice */
 
 .Invoice {
-  margin: 1rem 30vh 1rem 30vh;
+  margin: 1rem 30vh 1rem 10vh;
+  padding: 2rem 1rem 2rem 1rem;
+  text-align: justify;
+}
+
+/* Section Packing List */
+
+.ondaspacking {
+  aspect-ratio: 900/150;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(./Components/Imagem/ondaspacking.svg);
+}
+
+.padright {
+  padding-right: 0.5rem;
+}
+
+.packing {
+  margin: 1rem 30vh 1rem 10vh;
   padding: 2rem 1rem 2rem 1rem;
   text-align: justify;
 }
@@ -270,6 +291,10 @@ section h3 span {
 
 .terciaria {
   color: var(--cor-terciaria);
+}
+
+.secundaria {
+  color: var(--cor-secundaria);
 }
 
 .sublinhado {
