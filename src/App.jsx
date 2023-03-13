@@ -6,6 +6,7 @@ import Navbar from "./Components/navbar";
 import Invoice from "./Components/invoice";
 import InvoiceEx from "./Components/InvoiceEx.jsx";
 import Packinglist from "./Components/packinglist";
+import PackinglistEx from "./Components/packinglistEx";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Invoice></Invoice>
       <InvoiceEx></InvoiceEx>
       <Packinglist></Packinglist>
+      <PackinglistEx></PackinglistEx>
     </div>
   );
 }
