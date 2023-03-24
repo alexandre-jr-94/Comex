@@ -9,18 +9,18 @@ import Packinglist from "./Components/packinglist";
 import PackinglistEx from "./Components/packinglistEx";
 
 function App() {
-  return (
-    <div className="App">
-      <Navbar></Navbar>
-      <Animacao></Animacao>
-      <Comex></Comex>
-      <Importacao></Importacao>
-      <Invoice></Invoice>
-      <InvoiceEx></InvoiceEx>
-      <Packinglist></Packinglist>
-      <PackinglistEx></PackinglistEx>
-    </div>
-  );
+	return (
+		<div className="App">
+			<Navbar></Navbar>
+			<Animacao></Animacao>
+			<Comex></Comex>
+			<Importacao></Importacao>
+			<Invoice></Invoice>
+			<InvoiceEx></InvoiceEx>
+			<Packinglist></Packinglist>
+			<PackinglistEx></PackinglistEx>
+		</div>
+	);
 }
 
 export default App;
